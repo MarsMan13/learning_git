@@ -1,5 +1,6 @@
 const http = require('http'); const fs = require('fs'); const md = require('markdown-it')();
 const port = 3000;
+//insert noting
 
 function toHtml(markdown) { return ` <DOCTYPE html> <html lang="ko"> <head> <meta charset="utf-8"> </head> <body> ${md.render(markdown)} </body> </html>`; }
 http.createServer((request, response) => { console.log('Request received.');
